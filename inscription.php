@@ -28,13 +28,19 @@ if(isset($_POST['envoi'])){
     <body>
 
         <!--formulaire-->
-        <form method="POST" action="" align="center">
+        <div>
+            <table>
+            <form method="POST" action="" align="center">
+            <label for="pseudo">pseudo</label>
             <input type="text" name="prenom" autocomplete="off">
             <br>
+            <label for="pseudo">password</label>
             <input type="password" name="password" autocomplete="off">
             <br>
             <input type="submit" name="envoie">
-        </form>
+            </table>
+            </form>
+        </div>
           
     </body>
 </html>
