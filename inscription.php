@@ -6,8 +6,10 @@ if(isset($_POST['envoi'])){
     $pseudo = htmlspecialchars($_POST['login']);
     $mdp = sha1($_POST['password']);
     $insertUser = $bdd->prepare('INSERT INTO utilisateurs(prenom, password)VALUES(?, ?)');
-    $insertUser->execute(array($prenom, $password));
+    $insertUser->execute(array($prenom, $password)); 
+    
 }
+
 
 
 
@@ -29,17 +31,13 @@ if(isset($_POST['envoi'])){
 
         <!--formulaire-->
         <div>
-            <table>
-            <form method="POST" action="" align="center">
-            <label for="pseudo">pseudo</label>
-            <input type="text" name="prenom" autocomplete="off">
-            <br>
-            <label for="pseudo">password</label>
-            <input type="password" name="password" autocomplete="off">
-            <br>
-            <input type="submit" name="envoie">
-            </table>
-            </form>
+        <form method="POST" action="" align="center">
+            <label for="fname">login:</label><br>
+            <input type="text" id="fname" name="fname" value="login"><br>
+            <label for="lname">prenom:</label><br>
+            <input type="text" id="lname" name="lname" value="mot de pass"><br><br>
+            <input type="submit" value="Submit">
+        </form> 
         </div>
           
     </body>
