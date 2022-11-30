@@ -11,9 +11,6 @@ if(isset($_POST['submit'])){
 }
 
 
-
-
-
 ?>
 
 
@@ -33,26 +30,30 @@ if(isset($_POST['submit'])){
         <!--formulaire-->
         <div>
         <form method="POST" action="" align="center">
-        <label for="login">Login :</label>
-            <input type="text" name="login" id="login" required="required">
-            <label for="nom">Nom :</label>
-            <input type="text" name="nom" id="nom" required="required">
-            <label for="prenom">Prénom :</label>
-            <input type="text" name="prenom" id="prenom" required="required">
-            <label for="password">Mot de passe :</label>
-            <input type="password" name="password" id="password" required="required">
-            <label for="password1">Retapez votre mot de passe :</label>
-            <input type="password" name="password1" id="password1" required="required">
+
+            <label for="login">Login :</label><br>
+            <input type="text" name="login" id="login" required="required"><br><br>
+
+            <label for="nom">Nom :</label><br>
+            <input type="text" name="nom" id="nom" required="required"><br><br>
+
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" name="prenom" id="prenom" required="required"><br><br>
+
+            <label for="password">Mot de passe :</label><br>
+            <input type="password" name="password" id="password" required="required"><br><br>
+
+            <label for="password1">confirmer votre mot de passe :</label><br>
+            <input type="password" name="password1" id="password1" required="required"><br><br>
+
             <input type="submit" value="S'inscrire" name="submit"><br>
+            <input type="submit" value="envoyer">
             <?php if(isset($_POST['submit'])){
                     if($_POST['password']!=$_POST['password1']){
                         echo $message;
                     }
             }
     ?>
-
-
-            <input type="submit" value="envoyer">
         </form> 
         </div>
           
