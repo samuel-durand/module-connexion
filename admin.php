@@ -1,25 +1,9 @@
 <?php
-session_start();
-if(isset($_POST['valider'])){
-    if(!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
-        $pseudo_par_defaut = "admin";
-        $mdp_par_default = "admin";
-
-        $pseudo_saisi = htmlspecialchars($_POST['pseudo']);
-        $mdp_saisi = htmlspecialchars($_POST['mdp']);
-        
-        if($pseudo_saisi == $pseudo_par_defaut AND $mdp_saisi == $mdp_par_default){
-            $_SESSION['mdp'] = $mdp_saisi;
-            header('Location: inscription.php');
-
-        }else{
-            echo "veuiller";
+        $conn = mysqli_connect('localhost', 'root', '', 'moduleconnexion');
+        if(!$conn) {
+            echo "Connexion non établie.";
+            exit;
         }
-        }else{
-            echo "mdp faux";
-        }
-
-}
 ?>
 
 

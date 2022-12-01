@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
+
+
+nav li {
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+}
