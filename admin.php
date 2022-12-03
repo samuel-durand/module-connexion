@@ -1,10 +1,12 @@
-<?php
-        $conn = mysqli_connect('localhost', 'root', '', 'moduleconnexion');
-        if(!$conn) {
-            echo "Connexion non établie.";
-            exit;
-        }
+<?php include 'header.php'; ?>
+<?php // pour sécuriser la page admin à partir de la base d'adresse       
+    if (!$_SESSION ['loginOK']) {  // si la session n'est pas ouverte
+        header('Location: connexion.php');
+    }else if ($user != 'admin') { // si l'utilisateur n'est pas admin
+        header('Location: login.php');
+    }
 ?>
+<?php $request = $conn->query("SELECT * from `utilisateurs`;");?> <!-- requête pour récupérer les données de la table utilisateurs -->
 
 
 <!DOCTYPE html>

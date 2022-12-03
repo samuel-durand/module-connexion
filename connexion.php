@@ -15,6 +15,13 @@ if(isset($_GET['submit'])){
         
     }
 }
+
+// plesk connect
+
+
+/*$mysqli = new mysqli("localhost","root","mdpbasedonner","pleskbasenommoduleconnexion");*/
+
+
  
 
 ?>

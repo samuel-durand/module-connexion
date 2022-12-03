@@ -10,13 +10,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="menu.php">Accueil</a></li>
-                <li><a href="connexion.php">Connexion</a></li>
-                <li><a href="inscription.php">Inscription</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="menu">
+            <div class="list">
+                <ul>
+                    <li><a href="menu.php">menu</a></li>
+                    <li><a href="login.php">login</a></li>
+                    <li><a href="inscription.php">inscription</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     
 </body>
