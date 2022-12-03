@@ -24,8 +24,6 @@ include 'connexion.php';
     </header>
 
     <main>
-        <div class="screen">
-        <div class="screen__content">
         <form action="" method="get" align="center">
             <label for="login">Login :</label><br>
             <input type="text" name="login" class="champ" id="login" placeholder="Login" required="required"><br><br>
@@ -35,12 +33,6 @@ include 'connexion.php';
 
             <input type="submit" value="Valider" name="submit">
         </form>
-        <div class="screen__background">
-
-        </div>
-
-        </div>
-        </div>
     </main>
     <?php include 'footer.php'; ?>
 </body>
