@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$mysqli = mysqli_connect("localhost","root","","moduleconnexion");
+$mysqli = new mysqli("localhost","root","","moduleconnexion",3307);
 
 
 

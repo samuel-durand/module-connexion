@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = mysqli_connect("localhost","root","","moduleconnexion");
+$mysqli = new mysqli("localhost","root","","moduleconnexion",3307);
 $message = "Les mots de passes ne sont pas identiques !";
 
 if(isset($_POST['submit'])){
