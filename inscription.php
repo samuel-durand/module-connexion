@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
         <title>creation de compte</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="inscription.css">
     </head>
     <body>
 
@@ -69,7 +69,6 @@ if(isset($_POST['submit'])){
             }?>
         </form> 
         </main>
-        <?php include 'footer.php'; ?>
 
         
           

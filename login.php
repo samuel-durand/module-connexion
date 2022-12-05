@@ -7,7 +7,7 @@ include 'connexion.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inscription.css">
     <title>Connexion</title>
 </head>
 <body>
@@ -24,7 +24,7 @@ include 'connexion.php';
     </header>
 
     <main>
-        <form action="" method="get" align="center">
+        <form action="" method="get" align="center" >
             <label for="login">Login :</label><br>
             <input type="text" name="login" class="champ" id="login" placeholder="Login" required="required"><br><br>
 
@@ -34,6 +34,5 @@ include 'connexion.php';
             <input type="submit" value="Valider" name="submit">
         </form>
     </main>
-    <?php include 'footer.php'; ?>
 </body>
 </html>

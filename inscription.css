@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: #222D32
 }
 
 
@@ -28,23 +29,30 @@ a {
 main {
     display: flex;
     justify-content: center;
-}
-
-form {
-    background: #fc00ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient( to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	height: 720px;
-	width: 1980px;
+    align-items: center;
 
 }
+
+
+ main form {
+    border: 5px;
+    border-radius: 5px;
+    background-color: black;
+    width: 500px;
+    position: relative;
+    top: 250px;
+    -webkit-box-shadow:0 0 20px blue; 
+    -moz-box-shadow: 0 0 20px blue; 
+    box-shadow:0 0 20px blue;
+
+}
+
+
+
 section {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background: #fc00ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient( to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 section > h1 {
@@ -55,10 +63,6 @@ label {
     color: white;
 }
 
-.formcont {
-    height: 750px;
-    background-color: yellow;
-}
 
 
 footer {
