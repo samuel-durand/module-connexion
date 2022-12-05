@@ -1,8 +1,8 @@
 <?php
 
-$mysqli = mysqli_connect("localhost","root","","moduleconnexion");
+$mysqli = new mysqli("localhost:3306", "samuel1", "9U!ok81z4", "samuel-durand_moduleconnexion");
 
-        if(!$link) {
+        if(!$mysqli) {
             echo "Connexion non établie.";
             exit;
         }
