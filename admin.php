@@ -6,7 +6,7 @@
         header('Location: login.php');
     }
 ?>
-<?php $request = $conn->query("SELECT * from `utilisateurs`;");?> <!-- requête pour récupérer les données de la table utilisateurs -->
+<?php $request = $mysqli->query("SELECT * from `utilisateurs`;");?> <!-- requête pour récupérer les données de la table utilisateurs -->
 
 
 <!DOCTYPE html>

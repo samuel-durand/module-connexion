@@ -1,6 +1,6 @@
 <?php
 
-        $link = mysqli_connect('localhost', 'nadia', '*moduleconnexion*', 'nadia-hazem_moduleconnexion');
+$mysqli = mysqli_connect("localhost","root","","moduleconnexion");
 
         if(!$link) {
             echo "Connexion non établie.";
