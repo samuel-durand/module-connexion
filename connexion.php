@@ -2,6 +2,7 @@
 
 session_start();
 //$mysqli = new mysqli("localhost","root","","moduleconnexion",3307);
+$mysqli = new mysqli("localhost:3306", "samuel1", "9U!ok81z4", "samuel-durand_moduleconnexion");
 
 
 
@@ -16,10 +17,17 @@ if(isset($_GET['submit'])){
     }
 }
 
+if(isset($_POST['submit'])){
+    if($_POST['password']==$_POST['password1']){
+        $result = mysqli_query($mysqli,"INSERT INTO utilisateurs (`login`,`nom`,`prenom`,`password`) VALUES ('".$_POST['login']."','".$_POST['nom']."','".$_POST['prenom']."','".$_POST['password']."');");
+        
+    }
+}
+
+
 // plesk connect
 
 
-$mysqli = new mysqli("localhost","samuel1","9U!ok81z4","samuel-durand_moduleconnexion",3306)
 
 
  
