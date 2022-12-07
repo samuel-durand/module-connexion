@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
     if ($_POST['password'] == $_POST['verify-password']) {
         $requete = mysqli_query($mysqli, "INSERT INTO utilisateurs (`login`,`nom`,`prenom`,`password`) VALUES ('" . $_POST['login'] . "','" . $_POST['nom'] . "','" . $_POST['prenom'] . "','" . $_POST['password'] . "');");
         // echo "OK";
-        header('Location: connexion.php');
+        header('Location: login.php');
     } else {
         echo "Les mots de passe ne sont pas identiques !";
     }
