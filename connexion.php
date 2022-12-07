@@ -2,8 +2,8 @@
 
 
 
-$mysqli =mysqli_connect("localhost:3306","root","","moduleconnexion");
-//$mysqli = new mysqli("localhost:3306", "samuel1", "9U!ok81z4", "samuel-durand_moduleconnexion");
+//$mysqli =mysqli_connect("localhost:3306","root","","moduleconnexion");
+$mysqli = new mysqli("localhost:3306", "samuel1", "9U!ok81z4", "samuel-durand_moduleconnexion");
 
 
 
