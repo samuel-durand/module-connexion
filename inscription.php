@@ -1,6 +1,6 @@
 <?php
 
-include 'connexion.php'
+include 'connexion.php';
 
 
 
@@ -52,15 +52,10 @@ include 'connexion.php'
             <input type="password" name="password" id="password" placeholder="password" required="required"><br><br>
 
             <label for="password1">confirmer votre mot de passe :</label><br>
-            <input type="password" name="password1" id="password1" placeholder="confirmer password" required="required"><br><br>
+            <input type="password" name="verify-password" id="password1" placeholder="confirmer password" required="required"><br><br>
 
             <input type="submit" value="S'inscrire" name="submit"><br>
-            <?php if(isset($_POST['submit'])){
-                    if($_POST['password']!=$_POST['password1']){
-                        echo $message;
-                    }
-            }
-    ?>
+            
         </form> 
         </main>
 
